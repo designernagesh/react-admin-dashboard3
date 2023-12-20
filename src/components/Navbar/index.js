@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 function Navbar() {
     const savedTheme = localStorage.getItem('theme');
-    console.log('Saved Theme:', savedTheme);
     const [theme, setTheme] = useState(savedTheme ? JSON.parse(savedTheme) : 'light');
     const [showSidebar, setShowSidebar] = useState(true);
 
     const toggleTheme = () => {
         setTheme((prevTheme) => !prevTheme);
-        console.log('Toggled Theme:', !theme);
     };
 
 

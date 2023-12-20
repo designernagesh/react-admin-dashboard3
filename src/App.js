@@ -15,7 +15,7 @@ function App() {
         <main>
           <PageTitle />
           <InfoBoxes />
-          <div class="table-data">
+          <div className="table-data">
             <Orders />
             <Todos />
           </div>
